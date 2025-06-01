@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Ribeiro - Advogado</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Rafael Ribeiro - Advogado especialista em Direito Civil e Imobiliário. OAB 352.914-SP">
+    <meta name="keywords" content="advogado, direito civil, direito imobiliário, OAB, Rafael Ribeiro">
+    <meta name="author" content="Rafael Ribeiro">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rafael Ribeiro - Advogado">
+    <meta property="og:description" content="Especialista em Direito Civil e Imobiliário">
+    <meta property="og:image" content="images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
+    <!-- Elementos Decorativos Flutuantes -->
     <div class="floating-elements"></div>
     
+    <!-- Cartão Principal -->
     <div class="card">
-        <!-- CABEÇALHO COM LOGO E NOME -->
+        <!-- Cabeçalho com Logo e Informações -->
         <div class="header">
             <div class="logo-container">
                 <div class="logo">RR</div>
@@ -21,9 +41,9 @@
             <p class="specialty">Direito Civil e Imobiliário</p>
         </div>
         
-        <!-- CONTEÚDO PRINCIPAL -->
+        <!-- Conteúdo Principal -->
         <div class="content">
-            <!-- INFORMAÇÕES DE CONTATO -->
+            <!-- Informações de Contato -->
             <div class="contact-info">
                 <div class="contact-item">
                     <span class="icon">⚖️</span>
@@ -41,24 +61,35 @@
                 </div>
             </div>
             
-            <!-- BOTÕES INTERATIVOS -->
+            <!-- Título dos Botões -->
             <p class="interactive-text">Botões Interativos</p>
             
+            <!-- Botões de Ação -->
             <div class="buttons">
-                <a href="https://wa.me/5516991612986" target="_blank" class="btn whatsapp">
+                <a href="https://wa.me/5516991612986" 
+                   target="_blank" 
+                   class="btn whatsapp"
+                   aria-label="Entre em contato via WhatsApp">
                     📱 WhatsApp
                 </a>
                 
-                <a href="mailto:rhribeiro.adv@gmail.com" class="btn email">
+                <a href="mailto:rhribeiro.adv@gmail.com" 
+                   class="btn email"
+                   aria-label="Envie um email">
                     ✉️ Email
                 </a>
                 
-                <a href="#" onclick="alert('Por favor, forneça o link do LinkedIn')" class="btn linkedin">
+                <a href="#" 
+                   class="btn linkedin"
+                   aria-label="Acesse o LinkedIn"
+                   onclick="handleLinkedInClick()">
                     🔗 LinkedIn
                 </a>
             </div>
         </div>
     </div>
 
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
 </body>
 </html>
