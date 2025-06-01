@@ -1,5 +1,3 @@
-# Vamos criar o arquivo style.css com o conteúdo de CSS extraído do HTML embutido.
-css_code = """
 * {
     margin: 0;
     padding: 0;
@@ -175,11 +173,3 @@ body {
         font-size: 18px;
     }
 }
-"""
-
-# Salvando o conteúdo no arquivo style.css
-path = "/mnt/data/style.css"
-with open(path, "w") as f:
-    f.write(css_code)
-
-path
