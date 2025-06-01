@@ -8,7 +8,7 @@
 // =================== CONFIGURAÇÕES GERAIS ===================
 const CONFIG = {
     linkedin: {
-        url: 'https://linkedin.com/in/rafael-ribeiro', // Altere para o LinkedIn real
+        url: 'https://www.linkedin.com/in/rhribeiro-adv/',
         alertMessage: 'Por favor, forneça o link do LinkedIn correto!'
     },
     vibration: {
