@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cartão Elegante</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Ribeiro - Advogado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="card">
-    <img src="logo.png" alt="Logo" class="logo" />
-
-    <div class="profile-photo">
-      <img src="foto-perfil.jpg.jpg" alt="Foto de Perfil" />
+    <div class="floating-elements"></div>
+    
+    <div class="card">
+        <!-- CABEÇALHO COM LOGO E NOME -->
+        <div class="header">
+            <div class="logo-container">
+                <div class="logo">RR</div>
+            </div>
+            <h1 class="name">Rafael Ribeiro</h1>
+            <p class="title">Advogado</p>
+            <p class="specialty">Direito Civil e Imobiliário</p>
+        </div>
+        
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="content">
+            <!-- INFORMAÇÕES DE CONTATO -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon">⚖️</span>
+                    <span class="text">OAB 352.914-SP</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <span class="text">(16) 99161-2986</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="icon">✉️</span>
+                    <span class="text">rhribeiro.adv@gmail.com</span>
+                </div>
+            </div>
+            
+            <!-- BOTÕES INTERATIVOS -->
+            <p class="interactive-text">Botões Interativos</p>
+            
+            <div class="buttons">
+                <a href="https://wa.me/5516991612986" target="_blank" class="btn whatsapp">
+                    📱 WhatsApp
+                </a>
+                
+                <a href="mailto:rhribeiro.adv@gmail.com" class="btn email">
+                    ✉️ Email
+                </a>
+                
+                <a href="#" onclick="alert('Por favor, forneça o link do LinkedIn')" class="btn linkedin">
+                    🔗 LinkedIn
+                </a>
+            </div>
+        </div>
     </div>
-
-    <h1 class="name">Marcelo Silva</h1>
-    <p class="role">Engenheiro de Software | Assistente Núcleo de Egressos</p>
-
-    <div class="contact">
-      <a href="mailto:marcelo@email.com" class="btn email">✉️ Email</a>
-      <a href="https://wa.me/559999999999" target="_blank" class="btn whatsapp">📱 WhatsApp</a>
-      <a href="https://linkedin.com/in/marcelosilva" target="_blank" class="btn linkedin">🔗 LinkedIn</a>
-    </div>
-  </div>
-</body>
-</html>
