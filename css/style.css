@@ -1,0 +1,185 @@
+# Vamos criar o arquivo style.css com o conteúdo de CSS extraído do HTML embutido.
+css_code = """
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2d5016, #4a7c59);
+    padding: 20px;
+}
+
+.card {
+    width: 350px;
+    height: 600px;
+    background: linear-gradient(135deg, #2d5016, #4a7c59);
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2d5016;
+    font-family: serif;
+}
+
+.name {
+    color: #2d5016;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.specialty {
+    color: #f4d03f;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0;
+    z-index: 2;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    z-index: 2;
+}
+
+.contact-button {
+    background: white;
+    color: #2d5016;
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-button:active {
+    transform: translateY(0);
+}
+
+.interactive-label {
+    color: #f4d03f;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: white;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+    color: white;
+}
+
+.linkedin-button {
+    background: #0077B5;
+    color: white;
+}
+
+.linkedin-button:hover {
+    background: #005885;
+    color: white;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 300px;
+        height: 550px;
+        padding: 30px 25px;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .logo-text {
+        font-size: 40px;
+    }
+    
+    .specialty {
+        font-size: 18px;
+    }
+}
+"""
+
+# Salvando o conteúdo no arquivo style.css
+path = "/mnt/data/style.css"
+with open(path, "w") as f:
+    f.write(css_code)
+
+path
