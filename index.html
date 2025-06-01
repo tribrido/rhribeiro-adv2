@@ -1,129 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cartão de Visita - Rafael Ribeiro</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    body {
-      background-image: url('img/background.jpg');
-      background-size: cover;
-      background-position: center;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .card {
-      max-width: 350px;
-      margin: 60px auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
-
-    .logo img {
-      max-height: 60px;
-      margin-bottom: 10px;
-    }
-
-    .logo-text img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #333;
-    }
-
-    .name {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .specialty {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .contact-info {
-      margin: 10px 0;
-    }
-
-    .contact-button {
-      display: block;
-      margin: 5px auto;
-      padding: 10px 15px;
-      background-color: #eee;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .contact-button:hover {
-      background-color: #ddd;
-    }
-
-    .whatsapp-button {
-      background-color: #25d366;
-      color: white;
-    }
-
-    .linkedin-button {
-      background-color: #0077b5;
-      color: white;
-    }
-
-    .interactive-label {
-      font-size: 14px;
-      margin-top: 20px;
-      color: #333;
-      font-weight: bold;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cartão Elegante</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="card">
-    <div class="logo">
-      <img src="img/logo.png" alt="Logo">
-    </div>
-    
-    <div class="logo-text">
-      <img src="img/foto-perfil.jpg" alt="Foto de perfil">
+    <img src="logo.png" alt="Logo" class="logo" />
+
+    <div class="profile-photo">
+      <img src="foto-perfil.jpg.jpg" alt="Foto de Perfil" />
     </div>
 
-    <div class="name">
-      Rafael Ribeiro<br>
-      <span style="font-size: 12px; opacity: 0.7;">Advogado</span>
-    </div>
+    <h1 class="name">Marcelo Silva</h1>
+    <p class="role">Engenheiro de Software | Assistente Núcleo de Egressos</p>
 
-    <div class="specialty">Direito Civil e Imobiliário</div>
-
-    <div class="contact-info">
-      <div class="contact-button">OAB 352.914-SP</div>
-      <div class="contact-button">(16) 99161 - 2986</div>
-      <div class="contact-button">rhribeiro.adv@gmail.com</div>
-    </div>
-
-    <div class="interactive-label">Botões interativos</div>
-
-    <div class="contact-info">
-      <a href="https://wa.me/5516991612986" target="_blank" class="contact-button whatsapp-button">
-        📱 WhatsApp
-      </a>
-      <a href="https://linkedin.com/in/rhribeiro-adv" target="_blank" class="contact-button linkedin-button">
-        💼 LinkedIn
-      </a>
+    <div class="contact">
+      <a href="mailto:marcelo@email.com" class="btn email">✉️ Email</a>
+      <a href="https://wa.me/559999999999" target="_blank" class="btn whatsapp">📱 WhatsApp</a>
+      <a href="https://linkedin.com/in/marcelosilva" target="_blank" class="btn linkedin">🔗 LinkedIn</a>
     </div>
   </div>
-
-  <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
