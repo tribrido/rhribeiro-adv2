@@ -83,15 +83,14 @@ body::before {
     margin: 0 auto 20px;
     position: relative;
     z-index: 3;
+    overflow: hidden; /* <- ESSENCIAL pra cortar imagem que sair do círculo */
 }
 
 .logo {
     width: 100%;
-    max-width: 70px;      
-    height: auto;          
+    height: 100%;
+    object-fit: cover; /* Preenche o círculo sem distorcer */
     display: block;
-    border-radius: 50%; 
-    object-fit: cover
 }
 
 .name {
