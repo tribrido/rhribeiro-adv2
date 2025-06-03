@@ -15,13 +15,13 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: linear-gradient(135deg, #1a4a2e 0%, #2d5016 50%, #1a4a2e 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     overflow-x: hidden;
 }
@@ -29,13 +29,14 @@ body {
 /* Gradiente decorativo de fundo */
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 80%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
@@ -48,8 +49,9 @@ body::before {
     width: 100%;
     max-width: 380px;
     border-radius: 25px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3),
-                0 0 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 25px 60px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
     padding: 0;
     text-align: center;
     position: relative;
@@ -79,7 +81,7 @@ body::before {
 }
 
 /* Círculo decorativo no meio do cabeçalho */
-.header::before {
+.header::after {
     content: '';
     position: absolute;
     bottom: -30px;
@@ -94,32 +96,32 @@ body::before {
 }
 
 /* =================== LOGO =================== */
- .logo-container {
+.logo-container {
     width: 100px;
     height: 100px;
-    background-color: #004225; /* Verde escuro */
+    background-color: #004225;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
+    margin: 0 auto 20px;
     position: relative;
     z-index: 3;
 }
 
 .logo {
-    width: 70px; /* Ajuste conforme o tamanho da imagem */
+    width: 70px;
     height: 70px;
     object-fit: contain;
-    border-radius: 50%; /* Se quiser que a imagem também seja redonda */
+    border-radius: 50%;
 }
 
 /* =================== TEXTOS DO CABEÇALHO =================== */
 .name {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 28px;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     margin-bottom: 8px;
     letter-spacing: 1px;
@@ -171,9 +173,17 @@ body::before {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.contact-item:nth-child(1) { animation-delay: 0.2s; }
-.contact-item:nth-child(2) { animation-delay: 0.3s; }
-.contact-item:nth-child(3) { animation-delay: 0.4s; }
+.contact-item:nth-child(1) { 
+    animation-delay: 0.2s; 
+}
+
+.contact-item:nth-child(2) { 
+    animation-delay: 0.3s; 
+}
+
+.contact-item:nth-child(3) { 
+    animation-delay: 0.4s; 
+}
 
 @keyframes fadeInUp {
     from {
@@ -189,7 +199,7 @@ body::before {
 .contact-item:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .contact-item .icon {
@@ -199,6 +209,9 @@ body::before {
     color: #1a4a2e;
     font-size: 18px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-item .text {
@@ -207,6 +220,7 @@ body::before {
     font-size: 15px;
     flex: 1;
     text-align: left;
+    word-break: break-word;
 }
 
 /* =================== BOTÕES INTERATIVOS =================== */
@@ -232,7 +246,7 @@ body::before {
     border-radius: 30px;
     font-weight: 600;
     font-size: 16px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -242,12 +256,23 @@ body::before {
     cursor: pointer;
     opacity: 0;
     animation: fadeInUp 0.6s ease-out forwards;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.btn:nth-child(1) { animation-delay: 0.6s; }
-.btn:nth-child(2) { animation-delay: 0.7s; }
-.btn:nth-child(3) { animation-delay: 0.8s; }
+.btn:nth-child(1) { 
+    animation-delay: 0.6s; 
+}
+
+.btn:nth-child(2) { 
+    animation-delay: 0.7s; 
+}
+
+.btn:nth-child(3) { 
+    animation-delay: 0.8s; 
+}
 
 /* Efeito de brilho nos botões */
 .btn::before {
@@ -259,6 +284,7 @@ body::before {
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s ease;
+    z-index: 1;
 }
 
 .btn:hover::before {
@@ -308,6 +334,8 @@ body::before {
     pointer-events: none;
     overflow: hidden;
     z-index: 0;
+    top: 0;
+    left: 0;
 }
 
 .floating-elements::before,
@@ -346,8 +374,11 @@ body::before {
 
 /* =================== RESPONSIVIDADE =================== */
 @media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+    
     .card {
-        margin: 5px;
         max-width: calc(100vw - 20px);
     }
     
@@ -379,6 +410,10 @@ body::before {
     .contact-item .text {
         font-size: 14px;
     }
+    
+    .contact-item {
+        padding: 14px 18px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -388,11 +423,19 @@ body::before {
     }
     
     .logo {
-        font-size: 28px;
+        width: 60px;
+        height: 60px;
     }
     
     .name {
         font-size: 22px;
+    }
+    
+    .contact-item .icon {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        margin-right: 12px;
     }
 }
 
@@ -403,11 +446,20 @@ body::before {
     .btn,
     .interactive-text {
         animation: none;
+        opacity: 1;
     }
     
     .floating-elements::before,
     .floating-elements::after {
         animation: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .contact-item:hover {
+        transform: none;
     }
 }
 
@@ -421,18 +473,46 @@ body::before {
     outline: none;
 }
 
+.contact-item:focus-within {
+    outline: 2px solid #1a4a2e;
+    outline-offset: 2px;
+}
+
 /* =================== PRINT STYLES =================== */
 @media print {
     body {
-        background: white;
+        background: #ffffff;
+        padding: 0;
+    }
+    
+    body::before {
+        display: none;
     }
     
     .card {
         box-shadow: none;
         border: 2px solid #1a4a2e;
+        max-width: none;
+        width: 100%;
+        animation: none;
     }
     
     .floating-elements {
         display: none;
+    }
+    
+    .btn {
+        opacity: 1;
+        animation: none;
+    }
+    
+    .contact-item {
+        opacity: 1;
+        animation: none;
+    }
+    
+    .interactive-text {
+        opacity: 1;
+        animation: none;
     }
 }
