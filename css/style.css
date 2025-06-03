@@ -111,10 +111,12 @@ body::before {
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-    border-radius: 50%;
+    width: 100%;
+    max-width: 140px;      /* tamanho máximo para manter proporção */
+    height: auto;          /* mantém a proporção original da imagem */
+    display: block;
+    border-radius: 50%;    /* deixa a logo circular, se for quadrada */
+    object-fit: cover
 }
 
 /* =================== TEXTOS DO CABEÇALHO =================== */
