@@ -72,8 +72,8 @@ body::before {
 }
 
 .logo-container {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     background-color: #004225;
     border-radius: 50%;
     display: flex;
