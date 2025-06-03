@@ -108,6 +108,13 @@ body::before {
     z-index: 3;
     transition: transform 0.3s ease;
 }
+.logo-container {
+    background-color: #004225; /* Verde escuro elegante */
+    padding: 10px;
+    border-radius: 8px; /* Opcional: deixa o fundo arredondado */
+    display: inline-block; /* Garante que o fundo envolva a imagem */
+}
+
 
 .logo-container:hover {
     transform: scale(1.05);
