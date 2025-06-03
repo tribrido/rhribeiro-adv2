@@ -112,7 +112,7 @@ body::before {
 
 .logo {
     width: 100%;
-    max-width: 140px;      /* tamanho máximo para manter proporção */
+    max-width: 70px;      /* tamanho máximo para manter proporção */
     height: auto;          /* mantém a proporção original da imagem */
     display: block;
     border-radius: 50%;    /* deixa a logo circular, se for quadrada */
