@@ -97,6 +97,7 @@ body::before {
 .logo-container {
     width: 100px;
     height: 100px;
+    background-color: #004225; /* Verde escuro elegante */
     background: rgba(255, 255, 255, 0.95);
     border-radius: 50%;
     margin: 0 auto 20px;
@@ -107,12 +108,6 @@ body::before {
     position: relative;
     z-index: 3;
     transition: transform 0.3s ease;
-}
-.logo-container {
-    background-color: #004225; /* Verde escuro elegante */
-    padding: 10px;
-    border-radius: 8px; /* Opcional: deixa o fundo arredondado */
-    display: inline-block; /* Garante que o fundo envolva a imagem */
 }
 
 
