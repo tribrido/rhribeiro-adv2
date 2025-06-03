@@ -97,8 +97,8 @@ body::before {
 
 /* =================== LOGO =================== */
 .logo-container {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     background-color: #004225;
     border-radius: 50%;
     display: flex;
