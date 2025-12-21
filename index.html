@@ -1,95 +1,141 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+/*<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Ribeiro - Advogado</title>
-    
-    <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Meta Tags for SEO -->
-    <meta name="description" content="Rafael Ribeiro - Advogado especialista em Direito Cível e Imobiliário. OAB 352.914-SP">
-    <meta name="keywords" content="advogado, direito cível, direito imobiliário, OAB, Rafael Ribeiro">
-    <meta name="author" content="Rafael Ribeiro">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Rafael Ribeiro - Advogado">
-    <meta property="og:description" content="Especialista em Direito Cível e Imobiliário">
-    <meta property="og:image" content="img/logo.png">
-    
+    <title>Rafael Ribeiro — Advogado Especialista | Cível & Imobiliário</title>
+    <meta name="description" content="Rafael Ribeiro — Advocacia cível e imobiliária. Atendimento humano, estratégico e focado em resultados. Atuação em consultoria, contencioso e acompanhamento de imóveis e contratos.">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico.webp">
+
+    <!-- Ícones Flaticon -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 </head>
-<body>
-    <!-- Elementos Decorativos Flutuantes -->
-    <div class="floating-elements"></div>
-    
-    <!-- Cartão Principal -->
-    <div class="card">
-        <!-- Cabeçalho com Logo e Informações -->
-        <div class="header">
-            <div class="logo-container">
-                <img src="img/logo.png" alt="Logo de Rafael Ribeiro" class="logo">
-            </div>
-            <h1 class="name">Rafael Ribeiro</h1>
-            <p class="title">Advogado</p>
-            <p class="specialty">Direito Cível e Imobiliário</p>
-        </div>
-        
-        <!-- Conteúdo Principal -->
-        <div class="content">
-            <!-- Informações de Contato -->
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="icon">⚖️</span>
-                    <span class="text">OAB 352.914-SP</span>
-                </div>
-                
-                <div class="contact-item">
-                    <span class="icon">📞</span>
-                    <span class="text">(16) 99161-2986</span>
-                </div>
-                
-                <div class="contact-item">
-                    <span class="icon">✉️</span>
-                    <span class="text">rhribeiro.adv@gmail.com</span>
-                </div>
-            </div>
+<body id="top">
+    <!-- HEADER -->
+    <header id="header">
+        <nav role="navigation" aria-label="Navegação principal">
+            <a href="#top" id="logo">
+                <img src="imagens/logo.png"
+                     alt="Logo Rafael Ribeiro — Advocacia Cível e Imobiliária"
+                     width="140"
+                     height="48">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" aria-label="Apresentação">
+            <img src="imagens/hero-bg.jpg" alt="" class="hero-bg" loading="eager">
             
-            <!-- Título dos Botões -->
-            <p class="interactive-text">Botões Interativos</p>
-            
-            <!-- Botões de Ação -->
-            <div class="buttons">
-                <a href="https://wa.me/5516991612986" 
-                   target="_blank" 
-                   class="btn whatsapp"
-                   aria-label="Entre em contato via WhatsApp">
-                    📱 WhatsApp
+            <div class="hero-overlay"></div>
+
+            <div class="hero-wrapper">
+                <img src="imagens/hero-perfil.png"
+                     alt="Rafael Ribeiro - Advogado Cível e Imobiliário"
+                     class="hero-perfil"
+                     loading="eager">
+
+                <div class="hero-texto">
+                    <img src="imagens/logo.png"
+                         alt="Rafael Ribeiro — Advocacia Cível e Imobiliária"
+                         class="hero-logo"
+                         width="360"
+                         height="auto">
+                    
+                    <p>
+                        <strong>Rafael Ribeiro</strong> é advogado inscrito na OAB/SP sob o nº <strong>352.914</strong>,
+                        bacharel em Direito, com atuação especializada
+                        em <strong>Direito Cível e Imobiliário</strong>.
+                    </p>
+
+                    <p>
+                        Ao longo de sua trajetória, consolidou experiência prática na defesa de interesses
+                        patrimoniais, estruturando soluções jurídicas eficientes para pessoas físicas,
+                        investidores e pequenos empreendedores que buscam <strong>segurança</strong>, <strong>clareza</strong> e <strong>performance</strong>
+                        em suas relações jurídicas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" aria-label="Canais de contato">
+            <address>
+                <!-- E-mail -->
+                <a id="email"
+                   href="mailto:rhribeiro.adv@gmail.com"
+                   aria-label="Enviar e-mail para Rafael Ribeiro"
+                   class="contato-icon">
+                    <i class="fi fi-brands-google"></i>
                 </a>
-                
-                <a href="mailto:rhribeiro.adv@gmail.com" 
-                   class="btn email"
-                   aria-label="Envie um email">
-                    ✉️ Email
-                </a>
-                
-                <a href="https://www.linkedin.com/in/rhribeiro-adv/" 
+
+                <!-- WhatsApp -->
+                <a id="whatsapp"
+                   href="https://wa.me/5516991612986?text=Olá%20Rafael%2C%20gostaria%20de%20um%20atendimento"
                    target="_blank"
-                   class="btn linkedin"
-                   aria-label="Acesse o LinkedIn">
-                    🔗 LinkedIn
+                   rel="noopener"
+                   aria-label="Conversar com Rafael Ribeiro no WhatsApp"
+                   class="contato-icon whatsapp-destaque">
+                    <i class="fi fi-brands-whatsapp"></i>
                 </a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- JavaScript External -->
-    <script src="js/script.js"></script>
+
+                <!-- Instagram -->
+                <a id="instagram"
+                   href="https://www.instagram.com/rhribeiro.adv/"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Perfil de Rafael Ribeiro no Instagram"
+                   class="contato-icon">
+                    <i class="fi fi-brands-instagram"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a id="linkedin"
+                   href="https://www.linkedin.com/in/rhribeiro-adv/"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Perfil de Rafael Ribeiro no LinkedIn"
+                   class="contato-icon">
+                    <i class="fi fi-brands-linkedin"></i>
+                </a>
+            </address>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="ano">2025</span> Rafael Ribeiro — OAB/SP 352.914 | Todos os direitos reservados</p>
+        <p>
+            <small>
+                O conteúdo deste site não substitui consulta jurídica.
+                Para orientações específicas, agende uma consulta.
+            </small>
+        </p>
+    </footer>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5516991612986?text=Olá%20Rafael%2C%20vi%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta"
+       target="_blank"
+       rel="noopener"
+       aria-label="Botão de WhatsApp flutuante"
+       id="whatsapp-float">
+       <i class="fi fi-brands-whatsapp"></i>
+       <span class="whatsapp-text">WhatsApp</span>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js"></script>
 </body>
 </html>
