@@ -7,7 +7,7 @@
   'use strict';
 
   // =============== ANO DINÂMICO NO FOOTER ===============
-  const atualizarAno = () => { 
+  const atualizarAno = () => {
     const anoElement = document.getElementById('ano');
     if (anoElement) {
       anoElement.textContent = new Date().getFullYear();
