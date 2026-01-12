@@ -1,27 +1,25 @@
-/* ========================= RESPONSIVE PREMIUM ========================= */
+/* ========================= RESPONSIVE PREMIUM — FIX ========================= */
 
 /* ========================= TABLETS E ABAIXO (1024px) ========================= */
 @media (max-width: 1024px) {
-  #header nav {
-    padding: 14px 32px;
+
+  #hero {
+    min-height: auto;
   }
 
   .hero-wrapper {
     flex-direction: column;
-    gap: 40px;
-    padding: 80px 32px 50px;
     align-items: center;
     text-align: center;
-    min-height: unset;
-  }
-
-  #hero {
-    min-height: unset;
+    gap: 40px;
+    padding: 80px 32px 60px;
+    min-height: auto;
+    opacity: 1;
+    animation: none;
   }
 
   .hero-perfil {
     max-width: 360px;
-    margin: 0 auto;
   }
 
   .hero-texto {
@@ -37,18 +35,11 @@
   .hero-texto p {
     text-align: center;
   }
-
-  #contato {
-    padding: 50px 32px 70px;
-  }
-
-  footer {
-    padding: 36px 32px 28px;
-  }
 }
 
 /* ========================= SMARTPHONES (768px) ========================= */
 @media (max-width: 768px) {
+
   #header nav {
     padding: 12px 20px;
   }
@@ -58,25 +49,22 @@
   }
 
   #hero {
-    min-height: unset !important;
+    min-height: auto;
   }
 
   .hero-wrapper {
-    flex-direction: column-reverse;
     padding: 60px 20px 40px;
     gap: 24px;
-    min-height: unset !important;
+    align-items: flex-start;
   }
 
   .hero-perfil {
     max-width: 300px;
     margin: 0 auto;
-    border-radius: 10px;
   }
 
   .hero-logo {
     max-width: 260px;
-    margin-bottom: 10px;
   }
 
   .hero-texto {
@@ -90,28 +78,11 @@
     text-align: center;
   }
 
-  #contato {
-    padding: 40px 20px 60px;
-  }
-
-  footer {
-    padding: 32px 20px 24px;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
-
-  footer small {
-    font-size: 0.82rem;
-  }
-
   #whatsapp-float {
     right: 16px;
     bottom: 16px;
     padding: 11px 16px;
     font-size: 0.85rem;
-    opacity: 0.9;
   }
 
   #whatsapp-float i {
@@ -121,6 +92,7 @@
 
 /* ========================= SMARTPHONES PEQUENOS (480px) ========================= */
 @media (max-width: 480px) {
+
   .hero-wrapper {
     padding: 50px 16px 36px;
     gap: 20px;
@@ -137,18 +109,11 @@
   .hero-texto p {
     font-size: 0.9rem;
   }
-
-  #contato {
-    padding: 36px 16px 50px;
-  }
-
-  footer {
-    padding: 28px 16px 20px;
-  }
 }
 
 /* ========================= TELAS MUITO PEQUENAS (360px) ========================= */
 @media (max-width: 360px) {
+
   .hero-perfil {
     max-width: 230px;
   }
@@ -175,26 +140,19 @@
 
 /* ========================= LANDSCAPE MOBILE ========================= */
 @media (max-height: 600px) and (orientation: landscape) {
+
+  #hero {
+    min-height: auto;
+  }
+
   .hero-wrapper {
     padding: 40px 24px 30px;
     gap: 20px;
+    align-items: flex-start;
   }
 
   .hero-perfil {
     max-width: 220px;
-  }
-}
-
-/* ========================= TABLETS LANDSCAPE ========================= */
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-  .hero-wrapper {
-    flex-direction: row;
-    gap: 60px;
-    text-align: left;
-  }
-
-  .hero-texto {
-    align-items: flex-start;
   }
 }
 
@@ -203,32 +161,5 @@
   *, *::before, *::after {
     animation: none !important;
     transition: none !important;
-  }
-}
-
-/* ========================= TOUCH DEVICES ========================= */
-@media (hover: none) and (pointer: coarse) {
-  #whatsapp-float:hover,
-  .contato-icon:hover {
-    transform: scale(1.05);
-  }
-}
-
-/* ========================= IMPRESSÃO ========================= */
-@media print {
-  #header,
-  #whatsapp-float,
-  #contato {
-    display: none;
-  }
-
-  .hero-wrapper {
-    padding: 20px;
-  }
-
-  footer {
-    background: #fff;
-    color: #000;
-    border-top: 1px solid #000;
   }
 }
